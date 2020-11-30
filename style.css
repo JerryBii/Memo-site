@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+body, html {
+    height: 100%
+}
+
+.mySlides {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+/* Fading animation */
+.elementToFadeInAndOut {
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 4s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+  
+  
