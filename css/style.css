@@ -13,8 +13,10 @@ body, html {
 .mySlides {
     display: none;
 }
-img {
-    vertical-align: middle;
+
+.thumbimg {
+    max-width: 100%;
+    height: auto;
 }
 /* Fading animation */
 .elementToFadeInAndOut {
@@ -31,5 +33,3 @@ img {
   0%,100% { opacity: 1; }
   50% { opacity: 0; }
 }
-  
-  
