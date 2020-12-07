@@ -10,13 +10,50 @@ body, html {
     height: 100%
 }
 
+p{
+    margin: 10px;
+    padding: 10px;
+}
 .mySlides {
     display: none;
 }
 
 .thumbimg {
-    max-width: 100%;
+    opacity: 1;
+    display: block;
+    width: 100%;
     height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.thmbcon:hover .thumbimg {
+    opacity: 0.3;
+}
+  
+.thmbcon:hover .text {
+    opacity: 1;
+}
+
+.text {
+    opacity: 0.5;
+    background-color: #000000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 16px 16px;
+  }
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
 }
 /* Fading animation */
 .elementToFadeInAndOut {
