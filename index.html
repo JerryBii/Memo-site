@@ -22,16 +22,10 @@
 
   <!-- Main Header, with slide show. Need photos -->
   <header class="w3-display-container w3-wide w3-grayscale-min">
-    <div class="mySlides elementToFadeInAndOut fill">
-      <img src="images/Slide1.jpg">
-    </div>
-
-    <div class="mySlides elementToFadeInAndOut fill">
-      <img src="images/Slide1.jpg">
-    </div>
-
-    <div class="mySlides elementToFadeInAndOut fill">
-      <img src="images/Slide1.jpg">
+    <div class="fill">
+      <img class="mySlides w3-animate-fading" src="images/Slide1.jpg">
+      <img class="mySlides w3-animate-fading" src="images/head.jpg">
+      <img class="mySlides w3-animate-fading" src="images/Slide1.jpg">
     </div>
 
     <div class="w3-display-middle w3-text-white w3-center">
@@ -41,19 +35,19 @@
   </header>
 
   <script>
-    var slideIndex = 0;
-    showSlides();
+    var myIndex = 0;
+    carousel();
 
-    function showSlides() {
+    function carousel() {
       var i;
-      var slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
       }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1 }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 10000); // Change image every 2 seconds
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 9000);
     }
   </script>
 
