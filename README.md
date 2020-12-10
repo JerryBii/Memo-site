@@ -2,7 +2,7 @@
 I felt an obligation to create something when I was dealing with his passing and this is the result.
 
 It is a demonstration of skill with introductory HTML, and CSS.
-Many elements are created as a result of the w3schools CSS sheat.
+Many elements are created as a result of the w3schools CSS sheet.
 Many methods use may not be the most efficient, however as it stands it is more than functional
 
 In terms of extended development I wish to find a method to introduce a message board.
