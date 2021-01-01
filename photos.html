@@ -7,21 +7,32 @@
     <title>Photos of Ayrton</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <!-- Navbar -->
     <div class="w3-top">
         <div class="w3-bar w3-black w3-card">
-            <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-            <a href="photos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-gray">PHOTOS/VIDEOS</a>
-            <a href="Messages.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0)" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+            <a href="photos.html" class="w3-bar-item w3-button w3-padding-large w3-gray">PHOTOS</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
         </div>
+    </div>
+
+    <!-- Navbar, small screen width -->
+    <div id="mobileNav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
+        style="margin-top:46px">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
     </div>
 
     <div class="w3-sand w3-grayscale w3-large w3-padding-64">
         <div class="w3-container w3-content w3-center w3-padding-64">
-            <header class="w3-display-container w3-jumbo w316rayscale-min w3-margin">
+            <header class="w3-display-container w3-jumbo w3-grayscale-min w3-margin">
                 <h1 class="w3-wide">PHOTOS OF AYRTON</h1>
             </header>
             <p class="w3-justify w3-border-bottom w3-border-black">Here we document the good times spent with Ayrton,
@@ -148,7 +159,7 @@
     </div>
 
     <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-        <p>Work in progress, input appreciated</p>
+        <p>When we remember, let us smile a little longer</p>
     </footer>
 </body>
 
